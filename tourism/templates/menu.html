@@ -1,0 +1,74 @@
+  {% include  'base.html' %}
+<div class="headder-top">
+      <!-- nav -->
+      <nav>
+        <div id="logo">
+          <h1>
+            <a href="index">Sail-Trip</a>
+          </h1>
+        </div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
+        <ul class="menu mt-2">
+          <li class="active">
+            <a href="">Home</a>
+          </li>
+          <li class="mx-lg-3 mx-md-2 my-md-0 my-1">
+            <a href="about">About</a>
+          </li>
+          <li>
+            <a href="service">Services</a>
+          </li>
+          <li>
+            <a href="register">Register</a>
+          </li>
+          {% if user %}
+          <li>
+           Hi {{ user}}
+          </li>
+           {% else %}
+           <li>
+            <a href="login">Login</a>
+          </li>
+           {% endif %}
+          <li>
+            <a href="driver">Driver</a>
+          </li>
+          <li>
+            <a href="hotel">Hotel</a>
+          </li>
+           <li>
+            <a href="tourpackages">Tour package</a>
+          </li>
+<!--          <li class="mx-lg-3 mx-md-2 my-md-0 my-1">-->
+            <!-- First Tier Drop Down -->
+<!--            <label for="drop-2" class="toggle toogle-2">Dropdown-->
+<!--              <span class="fa fa-angle-down" aria-hidden="true"></span>-->
+<!--            </label>-->
+<!--            <a href="#">-->
+<!--              <span class="fa fa-angle-down" aria-hidden="true"></span>-->
+<!--            </a>-->
+<!--           <input type="checkbox" id="drop-2">&ndash;&gt;-->
+<!--            <ul>&ndash;&gt;-->
+<!--             <li>&ndash;&gt;-->
+<!--                <a href="gallery" class="drop-text">Gallery</a>&ndash;&gt;-->
+<!--              </li>&ndash;&gt;-->
+<!--            <li>&ndash;&gt;-->
+<!--              <a href="login" class="drop-text">Login</a>&ndash;&gt;-->
+<!--              </li>&ndash;&gt;-->
+<!--              <li>&ndash;&gt;-->
+<!--                <a href="blog" class="drop-text">Blog</a>&ndash;&gt;-->
+<!--              </li>&ndash;&gt;-->
+            </ul>
+          </li>
+<!--          <li>-->
+<!--            <a href="contact">Contact Us</a>-->
+<!--          </li>-->
+        </ul>
+      </nav>
+      <!-- //nav -->
+    </div>
+
+  <br>
+  <br>
+  <br>

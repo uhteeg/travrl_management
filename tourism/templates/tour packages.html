@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form class="registration" action="" method="post">
+			{% csrf_token %}
+			<h1>Package</h1>
+
+			<label >
+				<span>Username</span>
+				<input type="text" name="uname" minlength="3" required>
+				<span>Email</span>
+				<input type="text" name="email" minlength="3" required >
+				<span>Phone</span>
+				<input type="number" name="phone" minlength="3" required>
+				<span>address</span>
+</body>
+</html>

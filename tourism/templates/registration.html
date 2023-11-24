@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head> {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+  <!--//meta tags ends here-->
+  <!--booststrap-->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all">
+  <!--//booststrap end-->
+  <!-- font-awesome icons -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+  <!-- //font-awesome icons -->
+  <!--stylesheets-->
+  <link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' media="all">
+  <!--//stylesheets-->
+  <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <style>
+input[placeholder], [placeholder], *[placeholder] {
+    color: red !important;
+}
+</style>
+
+
+    </head>
+<!--<div class="col-lg-4 col-md-6 col-sm-6">-->
+<!--<body style="background: url(static/images/b6.jpg);">-->
+<body>
+<div class="headder-top">
+      <!-- nav -->
+      <nav>
+        <div id="logo">
+          <h1>
+            <a href="index">Sail-Trip</a>
+          </h1>
+        </div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
+        <ul class="menu mt-2">
+          <li class="active">
+            <a href="">Home</a>
+          </li>
+          <li class="mx-lg-3 mx-md-2 my-md-0 my-1">
+            <a href="about">About</a>
+          </li>
+          <li>
+            <a href="service">Services</a>
+          </li>
+          <li>
+            <a href="register">Register</a>
+          </li>
+          <li>
+            <a href="login">Login</a>
+          </li>
+          <li>
+            <a href="driver">Driver</a>
+          </li>
+          <li>
+            <a href="hotel">Hotel</a>
+          </li>
+           <li>
+            <a href="tourpackages">Tour package</a>
+          </li>
+
+<!--          <li class="mx-lg-3 mx-md-2 my-md-0 my-1">-->
+            <!-- First Tier Drop Down -->
+<!--            <label for="drop-2" class="toggle toogle-2">Dropdown-->
+<!--              <span class="fa fa-angle-down" aria-hidden="true"></span>-->
+<!--            </label>-->
+<!--            <a href="#">-->
+<!--              <span class="fa fa-angle-down" aria-hidden="true"></span>-->
+<!--            </a>-->
+<!--           <input type="checkbox" id="drop-2">&ndash;&gt;-->
+<!--            <ul>&ndash;&gt;-->
+<!--             <li>&ndash;&gt;-->
+<!--                <a href="gallery" class="drop-text">Gallery</a>&ndash;&gt;-->
+<!--              </li>&ndash;&gt;-->
+<!--            <li>&ndash;&gt;-->
+<!--              <a href="login" class="drop-text">Login</a>&ndash;&gt;-->
+<!--              </li>&ndash;&gt;-->
+<!--              <li>&ndash;&gt;-->
+<!--                <a href="blog" class="drop-text">Blog</a>&ndash;&gt;-->
+<!--              </li>&ndash;&gt;-->
+            </ul>
+          </li>
+<!--          <li>-->
+<!--            <a href="contact">Contact Us</a>-->
+<!--          </li>-->
+        </ul>
+      </nav>
+      <!-- //nav -->
+    </div>
+
+
+<div class="container">
+<div class="text-dark container" id="home">
+          <form action="" method="post">
+              {% csrf_token%}
+              <h1 class="text-white">Registration</h1>
+            <div class="form-group contact-forms"><br><br>
+              <input type="text" class="form-control "  placeholder="Name" name="uname" required="">
+            </div>
+<!--            <div class="form-group contact-forms">-->
+<!--              <input type="text" class="form-control" placeholder="Last Name" required="">-->
+<!--            </div>-->
+            <div class="form-group contact-forms">
+                <input type="email" class="form-control"  placeholder="Emaill" name="email" required="">
+            </div>
+            <div class="form-group contact-forms">
+              <input type="text" class="form-control"  placeholder="Phone" name="phone" required="">
+            </div>
+              <div class="form-group contact-forms">
+              <input type="text" class="form-control" placeholder="Address" name="address" required="">
+            </div>
+              <div class="form-group contact-forms">
+              <input type="password" class="form-control" placeholder="Password" name="pswd" required="">
+            </div>
+<!--            <div class="form-group contact-forms">-->
+<!--              <textarea class="form-control" placeholder="Message" rows="3" required=""></textarea>-->
+<!--            </div>-->
+            <button type="submit" class="btn sent-butnn">Submit</button>
+          </form>
+<!--</div>-->
+      </div>
+</div>
+</body>
+</html>
+<!--    <style>-->
+<!--        /* General layout */-->
+
+<!--html {-->
+<!--    font-size: 62.5%;-->
+<!--}-->
+
+<!--body {-->
+<!--    font-size: 1.6rem;-->
+<!--    line-height: 1.6;-->
+<!--    font-family: 'Source Sans Pro';-->
+<!--    background-color: rgb( );-->
+<!--}-->
+
+<!--h1 {-->
+<!--    font-size: 2.5rem;-->
+<!--    padding: 15px 20px;-->
+<!--    background-color: rgba();-->
+<!--    margin-bottom: 20px;-->
+<!--    text-align: center;-->
+<!--}-->
+
+<!--a {-->
+<!--    text-decoration: underline;-->
+<!--    color: inherit;-->
+<!--}-->
+
+<!--.container {-->
+<!--	margin: 80px auto;-->
+<!--	width: 90%;-->
+<!--	max-width: 800px;-->
+<!--}-->
+
+<!--.registration {-->
+<!--	background-color: ;-->
+<!--	max-width: 600px;-->
+<!--	margin: 0 auto;-->
+<!--	padding-bottom: 20px;-->
+<!--	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);-->
+<!--	border-bottom: 5px solid #ffdb3a;-->
+<!--}-->
+
+
+<!--.input-requirements {-->
+<!--  font-size: 1.3rem;-->
+<!--  font-style: italic;-->
+<!--  text-align: left;-->
+<!--  list-style: disc;-->
+<!--  list-style-position: inside;-->
+<!--  max-width: 400px;-->
+<!--  margin: 10px auto;-->
+<!--  color: rgb(150,150,150);-->
+<!--}-->
+
+
+<!--.input-requirements li.invalid {-->
+<!--	color: #e74c3c;-->
+<!--}-->
+<!--.input-requirements li.valid {-->
+<!--	color: #2ecc71;-->
+<!--}-->
+
+<!--.input-requirements li.valid:after {-->
+<!--	display: inline-block;-->
+<!--	padding-left: 10px;-->
+<!--	content: "\2713";-->
+<!--}-->
+
+<!--/* FormHack v1.2.0 (formhack.io) */-->
+
+<!--/* Config -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+<!--:root {-->
+
+<!--  /* Font */-->
+<!--  &#45;&#45;fh-font-family: 'Source Sans Pro', sans-serif;-->
+<!--  &#45;&#45;fh-font-size: 15px;-->
+<!--  &#45;&#45;fh-font-color: rgb(40, 40, 40);-->
+
+<!--  /* Borders */-->
+<!--  &#45;&#45;fh-border-radius: 3px;-->
+<!--  &#45;&#45;fh-border-width: 1px;-->
+<!--  &#45;&#45;fh-border-style: solid;-->
+<!--  &#45;&#45;fh-border-color: rgb(200, 200, 200);-->
+
+<!--  /* Inputs, Textareas, Select, Option */-->
+<!--  &#45;&#45;fh-input-height: 40px;-->
+<!--  &#45;&#45;fh-input-width: 100%;-->
+<!--  &#45;&#45;fh-input-max-width: 400px;-->
+<!--  &#45;&#45;fh-input-bg-color: rgb(250,250,250);-->
+<!--  &#45;&#45;fh-focus-bg-color: var(&#45;&#45;fh-input-bg-color);-->
+<!--  &#45;&#45;fh-focus-border-color: #000;-->
+<!--  &#45;&#45;fh-focus-font-color: var(&#45;&#45;fh-font-color);-->
+
+<!--  /* Select Vendor Styling */-->
+<!--  &#45;&#45;fh-select-vendor-styling: none; /* comment this out to maintain vendor styling */-->
+
+
+<!--  /* Buttons & Input Submits */-->
+<!--  &#45;&#45;fh-button-height: 40px;-->
+<!--  &#45;&#45;fh-button-width: 100%;-->
+<!--  &#45;&#45;fh-button-max-width: 200px;-->
+<!--  &#45;&#45;fh-button-font-color: var(&#45;&#45;fh-font-color);-->
+<!--  &#45;&#45;fh-button-bg-color: rgba(255, 219, 58,0.3);-->
+<!--  &#45;&#45;fh-button-hover-bg-color: rgb(255, 219, 58);-->
+<!--  &#45;&#45;fh-button-hover-font-color: var(&#45;&#45;fh-font-color);-->
+
+<!--  /* Layout */-->
+<!--  &#45;&#45;fh-layout-display: block;-->
+<!--  &#45;&#45;fh-layout-margin: 10px auto; /* change to "10px auto" to center */-->
+<!--  &#45;&#45;fh-layout-text-align: center;-->
+<!--}-->
+
+
+
+<!--/* Global Reset Styles &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+
+
+
+<!--input,-->
+<!--textarea,-->
+<!--select,-->
+<!--option,-->
+<!--optgroup,-->
+<!--button,-->
+<!--legend,-->
+<!--fieldset {-->
+<!--  box-sizing: border-box;-->
+<!--  outline: none;-->
+
+<!--  font-family: var(&#45;&#45;fh-font-family);-->
+<!--  font-size: var(&#45;&#45;fh-font-size);-->
+<!--  color: var(&#45;&#45;fh-font-color);-->
+<!--  vertical-align: top;-->
+
+<!--  display: var(&#45;&#45;fh-layout-display);-->
+<!--  margin: var(&#45;&#45;fh-layout-margin);-->
+<!--  text-align: var(&#45;&#45;fh-layout-text-align);-->
+<!--}-->
+
+
+<!--datalist {-->
+<!--  font-family: var(&#45;&#45;fh-font-family);-->
+<!--  font-size: var(&#45;&#45;fh-font-size);-->
+<!--}-->
+
+<!--label {-->
+<!--  display: block;-->
+<!--  margin: var(&#45;&#45;fh-layout-margin);-->
+<!--  text-align: var(&#45;&#45;fh-layout-text-align);-->
+<!--  margin-bottom: 20px;-->
+<!--  position: relative;-->
+<!--  padding: 0 20px;-->
+<!--}-->
+
+
+
+<!--/* Input & Textarea &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+
+<!--/* Fields with standard width */-->
+<!--input[type="text"],-->
+<!--input[type="email"],-->
+<!--input[type="password"],-->
+<!--input[type="search"],-->
+<!--input[type="color"],-->
+<!--input[type="date"],-->
+<!--input[type="datetime-local"],-->
+<!--input[type="month"],-->
+<!--input[type="number"],-->
+<!--input[type="tel"],-->
+<!--input[type="time"],-->
+<!--input[type="url"],-->
+<!--input[type="week"],-->
+<!--input[list],-->
+<!--input[type="file"],-->
+<!--select,-->
+<!--textarea {-->
+<!--  width: var(&#45;&#45;fh-input-width);-->
+<!--  max-width: var(&#45;&#45;fh-input-max-width);-->
+<!--  padding: calc( var(&#45;&#45;fh-input-height) / 5 );-->
+<!--  background-color: var(&#45;&#45;fh-input-bg-color);-->
+
+<!--  border-radius: var(&#45;&#45;fh-border-radius);-->
+<!--  border-width: var(&#45;&#45;fh-border-width);-->
+<!--  border-style: var(&#45;&#45;fh-border-style);-->
+<!--  border-color: var(&#45;&#45;fh-border-color);-->
+<!--}-->
+
+<!--/* Fields with standard height */-->
+<!--input[type="text"],-->
+<!--input[type="email"],-->
+<!--input[type="password"],-->
+<!--input[type="search"],-->
+<!--input[type="color"],-->
+<!--input[type="date"],-->
+<!--input[type="datetime-local"],-->
+<!--input[type="month"],-->
+<!--input[type="number"],-->
+<!--input[type="tel"],-->
+<!--input[type="time"],-->
+<!--input[type="url"],-->
+<!--input[type="week"],-->
+<!--input[list] {-->
+<!--  height: var(&#45;&#45;fh-input-height);-->
+<!--  -webkit-appearance: none;-->
+<!--}-->
+
+<!--/* Other */-->
+
+<!--textarea {-->
+<!--  -webkit-appearance: none;-->
+<!--  overflow: auto;-->
+<!--}-->
+
+<!--input[type="range"] {-->
+<!--  height: var(&#45;&#45;fh-input-height);-->
+<!--  width: var(&#45;&#45;fh-input-width);-->
+<!--  max-width: var(&#45;&#45;fh-input-max-width);-->
+<!--}-->
+
+<!--input[type="file"] {-->
+<!--  min-height: var(&#45;&#45;fh-input-height);-->
+<!--}-->
+
+<!--input[type="search"] {-->
+<!--  height: var(&#45;&#45;fh-input-height);-->
+<!--  -webkit-appearance: none;-->
+<!--}-->
+<!--input[type="search"]::-webkit-search-cancel-button,-->
+<!--input[type="search"]::-webkit-search-decoration {-->
+<!--  -webkit-appearance: none;-->
+<!--}-->
+
+<!--input[type="checkbox"],-->
+<!--input[type="radio"] {-->
+<!--  display: inline-block;-->
+<!--  vertical-align: middle;-->
+<!--}-->
+<!--/* For checkbox and radio to be centered, need to wrap the input and label in a span - -->
+<!--/* .checkbox-container {-->
+<!--/*  display: block;-->
+<!--/*  text-align: center;-->
+<!--/* }-->
+<!--/* Select &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+
+<!--select {-->
+<!--  height: var(&#45;&#45;fh-input-height);-->
+
+<!--  -webkit-appearance: var(&#45;&#45;fh-select-vendor-styling, menulist);-->
+<!--  -moz-appearance: var(&#45;&#45;fh-select-vendor-styling, menulist);-->
+<!--  -ms-appearance: var(&#45;&#45;fh-select-vendor-styling, menulist);-->
+<!--  -o-appearance: var(&#45;&#45;fh-select-vendor-styling, menulist);-->
+
+
+<!--}-->
+
+<!--select[multiple] {-->
+<!--  height: auto;-->
+<!--  min-height: var(&#45;&#45;fh-input-height);-->
+<!--  padding: 0;-->
+<!--}-->
+
+<!--select[multiple] option {-->
+<!--  margin: 0;-->
+<!--  padding: calc( var(&#45;&#45;fh-input-height) / 5 );-->
+<!--}-->
+
+<!--/* Fieldset &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+
+<!--fieldset {-->
+<!--  padding: 0;-->
+<!--  border: 0;-->
+<!--}-->
+
+<!--legend {-->
+<!--  padding: 0;-->
+<!--  font-weight: inherit;-->
+<!--}-->
+
+<!--/* Buttons, Input Type Submit/Reset &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+
+<!--button,-->
+<!--input[type="button"],-->
+<!--input[type="submit"],-->
+<!--input[type="reset"],-->
+<!--input[type="image"] {-->
+<!--  height: var(&#45;&#45;fh-button-height);-->
+<!--  width: var(&#45;&#45;fh-button-width);-->
+<!--  max-width: var(&#45;&#45;fh-button-max-width);-->
+<!--  background-color: var(&#45;&#45;fh-button-bg-color);-->
+<!--  padding: calc( var(&#45;&#45;fh-input-height) / 5 );-->
+<!--  cursor: pointer;-->
+
+<!--  color: var(&#45;&#45;fh-button-font-color);-->
+<!--  font-weight: 700;-->
+
+<!--  -webkit-appearance: none;-->
+<!--  -moz-appearance: none;-->
+
+<!--  border-radius: var(&#45;&#45;fh-border-radius);-->
+<!--  border-width: var(&#45;&#45;fh-border-width);-->
+<!--  border-style: var(&#45;&#45;fh-border-style);-->
+<!--  border-color: var(&#45;&#45;fh-border-color);-->
+
+
+
+<!--  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);-->
+<!--}-->
+
+<!--input[type="image"] {-->
+<!--  text-align: center;-->
+<!--  padding: calc( var(&#45;&#45;fh-input-height) / 5 );-->
+<!--}-->
+
+<!--/* States &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+
+<!--input[disabled],-->
+<!--textarea[disabled],-->
+<!--select[disabled],-->
+<!--option[disabled],-->
+<!--button[disabled] {-->
+<!--  cursor: not-allowed;-->
+<!--}-->
+
+<!--input:focus,-->
+<!--textarea:focus,-->
+<!--select:focus,-->
+<!--option:focus,-->
+<!--button:focus  {-->
+<!--  background-color: var(&#45;&#45;fh-focus-bg-color);-->
+<!--  border-color: var(&#45;&#45;fh-focus-border-color);-->
+<!--}-->
+
+<!--input[type="checkbox"]:focus,-->
+<!--input[type="radio"]:focus {-->
+<!--  outline: var(&#45;&#45;fh-focus-border-color) solid 2px;-->
+<!--}-->
+
+<!--button:hover,-->
+<!--input[type="button"]:hover,-->
+<!--input[type="submit"]:hover,-->
+<!--input[type="reset"]:hover,-->
+<!--button:focus,-->
+<!--input[type="button"]:focus,-->
+<!--input[type="submit"]:focus,-->
+<!--input[type="reset"]:focus {-->
+<!--  background-color: var(&#45;&#45;fh-button-hover-bg-color);-->
+<!--  color: var(&#45;&#45;fh-button-hover-font-color);-->
+<!--}-->
+
+
+
+
+<!--/* Custom &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+
+
+<!--input:not([type="submit"]):valid {-->
+<!--  border-color: #2ecc71;-->
+<!--}-->
+
+
+<!--/* Hide and show related .input-requirements when interacting with input */-->
+
+<!--input:not([type="submit"]) + .input-requirements {-->
+<!--  overflow: hidden;-->
+<!--  max-height: 0;-->
+<!--  transition: max-height 1s ease-out;-->
+<!--}-->
+
+<!--input:not([type="submit"]):hover + .input-requirements,-->
+<!--input:not([type="submit"]):focus + .input-requirements,-->
+<!--input:not([type="submit"]):active + .input-requirements {-->
+<!--  max-height: 1000px; /* any large number (bigger then the .input-requirements list) */-->
+<!--  transition: max-height 1s ease-in;-->
+<!--}-->
+
+<!--    </style>-->
+<!--<div style="background-image:url(static/images/);">-->
+<!--    <div class="container">-->
+<!--		<form class="registration" action="" method="post">-->
+<!--			{% csrf_token %}-->
+<!--			<h1 class="text-white">Registration Form</h1>-->
+<!--			<label>-->
+<!--				<span>Username</span>-->
+<!--				<input type="text" name="uname" minlength="3" required>-->
+<!--				<span>Email</span>-->
+<!--				<input type="text" name="email" minlength="3" required >-->
+<!--				<span>Phone</span>-->
+<!--				<input type="number" name="phone" minlength="3" required>-->
+<!--				<span>address</span>-->
+<!--				<input type="text" name="address" maxlength="100"  minlength="8" required>-->
+<!--				<ul class="input-requirements">-->
+<!--&lt;!&ndash;					<li>At least 3 characters long</li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li>Must only contain letters and numbers (no special characters)</li>&ndash;&gt;-->
+<!--				</ul>-->
+<!--			</label>-->
+
+<!--			<label >-->
+<!--				<span>Password</span>-->
+<!--				<input type="password" name="pswd" maxlength="100" minlength="8" required>-->
+
+<!--				<ul class="input-requirements">-->
+<!--&lt;!&ndash;					<li>At least 8 characters long (and less than 100 characters)</li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li>Contains at least 1 number</li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li>Contains at least 1 lowercase letter</li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li>Contains at least 1 uppercase letter</li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li>Contains a special character (e.g. @ !)</li>&ndash;&gt;-->
+<!--				</ul>-->
+<!--			</label>-->
+<!--			<br>-->
+<!--			<input type="submit">-->
+<!--		</form>-->
+<!--	</div>-->
+<!--</div>-->

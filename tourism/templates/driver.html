@@ -1,0 +1,30 @@
+{% include  'menu.html' %}
+
+<form class="registration" action="" method="post">
+			{% csrf_token %}
+<link href="//db.onlinewebfonts.com/c/a4e256ed67403c6ad5d43937ed48a77b?family=Core+Sans+N+W01+35+Light" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="form.css" type="text/css">
+<div class="body-content">
+  <div class="module">
+    <h1>Driver Registration</h1>
+    <form class="form" action="" method="post" >
+      <input type="text" placeholder="Full name" name="name" required />
+      <input type="text" placeholder="Email" name="email" required />
+      <input type="text" placeholder="password" name="passwrd" required />
+      <input type="text" placeholder="Address" name="address" required />
+		<input type="text" placeholder="Aadhar no" name="aadhr" required />
+		<input type="text" placeholder="Liscence number" name="lisn" required />
+		<input type="text" placeholder="District" name="dist" required />
+		<input type="text" placeholder="State" name="state" required />
+		<p>
+        <label class=""><b>Vehicle Type</b></label>
+        <br/>
+        <input class="w3-radio" type="radio" name="vehi" value=" Two wheeler" checked>
+        <label class="w3-validate">Two wheeler</label>
+			<input class="w3-radio" type="radio" name="vehi" value=" Four wheeler" checked>
+          <label class="w3-validate">Four  wheeler</label>
+
+      <input type="submit" value="Register" name="register" class="btn btn-block btn-primary" />
+        </p>
+    </form>
+            {% include  'footer.html' %}
